@@ -30,3 +30,14 @@ number.addEventListener('input',function(){
         numberError.textContent = "number is incorrect";
     }
 });
+
+const password = document.querySelector('#password');
+const passwordError = document.querySelector('.password-error');
+password.addEventListener('input',function(){
+    let passwordRegex = RegExp('(?=.*[A-Z])(?=.*\\d)((?=.*[@$!%*?&]){1})[A-Za-z0-9@$!%*?&]{8,}');
+    if(passwordRegex.test(password.value)){
+        passwordError.textContent = "";
+    }else{
+        passwordError.textContent = "password is incorrect";
+    }
+});
