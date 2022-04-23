@@ -1,12 +1,12 @@
 html, input{
-    font-family: sans-serif;
+    font-family: sans-serif
 }
 
 body{
     width: 50%;
     max-width: 600px;
     margin: 0px auto;
-    padding: 2em;
+    padding: 2em
 }
 
 .headerContainer{
@@ -15,11 +15,11 @@ body{
     align-content: center;
     background-color: tomato;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 form{
-    margin-top: 50px;
+    margin-top: 50px
 }
 
 div{
@@ -35,12 +35,12 @@ label, input, button{
 }
 
 input{
-    flex: auto;
+    flex: auto
 }
 
 button{
     width: 70%;
-    margin: 0 auto;
+    margin: 0 auto
 }
 
 .error-output{

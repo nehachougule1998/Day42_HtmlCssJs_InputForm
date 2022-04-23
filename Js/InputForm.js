@@ -9,3 +9,13 @@ text.addEventListener('input',function(){
     }
 });
 
+const email = document.querySelector('#email');
+const emailError = document.querySelector('.email-error');
+email.addEventListener('input',function(){
+    let emailRegex = RegExp('^[abc](.+){1}[A-Za-z]*+@{1}[bl](.+)[co](.+)[in]$');
+    if(emailRegex.test(email.value)){
+        emailError.emailContent = "";
+    }else{
+        emailError.emailContent = "email format is incorrect";
+    }
+});
