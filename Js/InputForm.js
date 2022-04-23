@@ -14,8 +14,19 @@ const emailError = document.querySelector('.email-error');
 email.addEventListener('input',function(){
     let emailRegex = RegExp('^[abc](.+){1}[A-Za-z]*+@{1}[bl](.+)[co](.+)[in]$');
     if(emailRegex.test(email.value)){
-        emailError.emailContent = "";
+        emailError.textContent = "";
     }else{
-        emailError.emailContent = "email format is incorrect";
+        emailError.textContent = "email format is incorrect";
+    }
+});
+
+const number = document.querySelector('#number');
+const numberError = document.querySelector('.number-error');
+number.addEventListener('input',function(){
+    let numberRegex = RegExp('^([0-9]{2}[ ][0-9]{10})$');
+    if(numberRegex.test(number.value)){
+        numberError.textContent = "";
+    }else{
+        numberError.textContent = "number is incorrect";
     }
 });
